@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Music Website</title>
+<link rel="stylesheet" href="style.css">  
+<script src="https://kit.fontawesome.com/5a21e208fd.js" crossorigin="anonymous"></script>
+
+<style>
+           header {
+                background-image: url('image.png');
+                height: 400vh;
+                -webkit-background-size: cover;
+                background-size: cover;
+                background-position: center center;
+                position: relative;
+                
+            }
+            body 
+            { 
+                background-image: url('image.png');
+                justify-content: center;
+                align-items : center;
+                background-size: cover;
+                background-position: center;
+                position: relative;
+                display : flex;
+                margin-top: 0%;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+            }
+            /* table{
+                width: 100%;
+                border-collapse: collapse;
+                font-family: sans-serif;
+                border-spacing: 10px;
+            }
+            td{
+                object-fit: fill;
+            } */
+            table{
+                width: 100%;
+                border-spacing: 20px;
+                border: 0px solid black;
+                font-family: sans-serif;
+                padding: 10px;
+                margin-left: auto; 
+  margin-right: auto;
+                
+            }
+            img {
+                border-radius: 10px;
+                transition-property: border-radius;
+            }
+            th{
+                background-color:#333;
+                color: #fff;
+            }
+            td{
+                font-size : 1rem;
+                height : 180px;
+                background-color: rgba(240, 248, 255, 0.493);
+            }
+            th{
+                font-size : 1rem;
+                height:60px;
+            }
+            tbody{
+              
+                color : #555;
+            }
+            .nav-area li a {
+                color: darkcyan;
+                text-decoration: none;
+                padding: 5px 20px;
+                font-family: 'Lato', sans-serif;
+                font-size: 20px;
+                text-transform: uppercase;
+            }
+            marquee{
+  background: rgb(194,205,218); /* Old browsers */
+background: -moz-linear-gradient(left,  rgba(194,205,218,1) 0%, rgba(88,97,104,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(194,205,218,1) 0%,rgba(88,97,104,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(194,205,218,1) 0%,rgba(88,97,104,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c2cdda', endColorstr='#586168',GradientType=1 ); /* IE6-9 */
+            color: greenyellow;
+            scroll-behavior: left;
+            font-size: 3rem;
+            display : inline-block; 
+            font-family: 'Merriweather', serif;
+            scroll-behavior: left;
+            margin : 20px;
+        }
+        h4{
+            visibility: hidden;
+            margin : 0px;
+        }
+
+        
+        td::first-letter{
+            font-size:1.5rem;
+        }
+        th::first-letter{
+            font-size:1.5rem;
+        }
+        th::first-line{
+            font-weight: bold;
+        }
+    *{
+        margin : 0;
+        padding :0;
+        font-family: sans-serif;
+    }
+    .container{
+        height : 100vh;
+        width :100%;
+        background-image : url('image.png');
+        background-size: cover;
+        background-position: center;
+    }
+    .navbar{
+        width :88%;
+        margin : auto;
+        padding : 15px 0;
+        display : flex;
+        align-items : center;justify-content: space-between;
+
+    }
+    .logo{
+        width : 140px;
+        cursor : pointer;
+    }
+    .navbar ul li {
+        list-style : none;
+        display : inline-block;
+        margin : 0 15px;
+    }
+    .navbar ul li a{
+        text-decoration : none;
+        color :#5f5f5f;
+        font-size:25px;
+    }
+    .content {
+        width:100%;
+        position : absolute;
+        top :30%
+    }
+    .left-col{
+        margin-left :6%;
+    }
+    .left-col h1{
+        font-size : 90px;
+        color : #fff;line-height :110px;
+        float : left;
+    }
+    a{
+        text-decoration: none;
+    }
+    .right-col{
+        float:right;
+        margin-right : 6%;
+        margin-top: 120px;
+        display : flex;
+        align-items:center;
+    }
+    .right col p{
+        font-size:18px;
+        color:#5f5f5f;
+        font-weight:400;
+        margin-right:15px;
+    }
+    #icon{
+        width : 80px;
+        cursor:pointer;
+    }
+    .nav-area li a {
+                color: #fff;
+                text-decoration: none;
+                padding: 5px 20px;
+                font-family: 'Poppins', sans-serif;
+                font-size: 20px;
+                text-transform: uppercase;
+                float: right;
+            }
+            .nav-area li a:hover {
+background: #fff;          
+      color: #333;
+            }
+            .fa-home{
+    color:blue;
+    font-size:3rem;
+  }
+  .fa-product-hunt{
+    color:blue;
+    font-size:3rem;
+  }
+  .fa-address-card{
+    color:blue;
+    font-size:3rem;
+  }
+  .fa-phone-alt{
+    color:blue;
+    font-size:3rem;
+  } 
+  .fa-list-alt{
+    color:blue;
+    font-size:3rem;
+  }
+    </style>
+</head>
+<body>
+        <div class="container">
+            <div class = "navbar"><a href="h.html"> <img src = "logo.png" alt ="" class = "logo"></a>
+                <ul class="nav-area">
+                    <li><a href="h.html"><i class="fas fa-home fa"></i></a></li>
+                    <li><a href="description.html"><i class="far fa-list-alt"></i>
+
+                    </a></li>
+                    <li><a href="services.html"><i class="fab fa-product-hunt"></i>
+
+                    </a></li>
+                    <li><a href="contact.html"><i class="fas fa-address-card"></i>
+
+                    </a></li>
+                    <li><a href="about.html"><i class="fas fa-phone-alt"></i>
+                        <li><a href="#"></a></li>
+
+                    </ul>
+            </div>
+            <table>
+              <tr>
+                  <th>SERIAL NUMBER</th>
+                  <th>INSTRUMENT</th>
+                  <th>THEIR SOUND</th>
+                  <th>IMAGES OF THE INSTRUMENT</th>
+                  <th >FOR MORE</th>
+              </tr>
+              <tr>
+                  <td><center>1</center></td>
+                  <td><center>GUITAR</center></td>
+                  <td><center>
+                      <audio controls>
+                          <source src="guitar.mp3" type="audio/mpeg">
+                        </audio>
+                  </center></td>
+                  <td><center><img src="guitar.jpeg" width = "250px" height = "250px"></center></td>
+                  <td><center><a href="https://en.wikipedia.org/wiki/Guitar">CLICK HERE</a></center></td>
+              </tr>
+              <tr>
+                  <td><center>2</center></td>
+                  <td><center>PIANO</center></td>
+                  <td><center>
+                      <audio controls>
+                          <source src="piano_ringtone.mp3" type="audio/mpeg">
+                        </audio>
+                  </center></td>
+                  <td><center><img src="https://th.bing.com/th/id/OIP.CrQ7wPLKzBPBBGb2NneKagHaE8?pid=ImgDet&rs=1" width = "250px" height = "250px"></center></td>
+                  <td><center><a href="https://en.wikipedia.org/wiki/Musical_keyboard">CLICK HERE</a></center></td>
+              </tr>
+              <tr>
+                  <td><center>3</center></td>
+                  <td><center>DRUMS</center></td>
+                  <td><center>
+                      <audio controls>
+                          <source src="Drum.mp3" type="audio/mpeg">
+                        </audio>
+                  </center></td>
+                  <td><center><img src="https://th.bing.com/th/id/OIP.haud_-qhlPiWu0UT3AZ8EgEsDI?pid=ImgDet&rs=1" width = "250px" height = "250px"></center></td>
+                  <td><center><a href="https://en.wikipedia.org/wiki/Drum">CLICK HERE</a></center></td>
+              </tr>
+              <tr>
+                  <td><center>4</center></td>
+                  <td><center>TABALA</center></td>
+                  <td><center>
+                      <audio controls>
+                          <source src="indian-tabla meloboom.mp3" type="audio/mpeg">
+                        </audio>
+                  </center></td>
+                  <td><center><img src="https://th.bing.com/th/id/OIP.14GmVZ1_o4lMXwgFSMhnjAHaFT?pid=ImgDet&rs=1" width = "250px" height = "250px"></center></td>
+                  <td><center><a href="https://en.wikipedia.org/wiki/Tabala">CLICK HERE</a></center></td>
+              </tr>
+              <tr>
+                  <td><center>5</center></td>
+                  <td><center>VIOLIN</center></td>
+                  <td><center>
+                      <audio controls>
+                          <source src="violin-mohabathen-320.mp3" type="audio/mpeg">
+                      </audio>
+                  </center></td>
+                  <td><center><img src="violin.jpeg" width = "250px" height = "250px"></center></td>
+                  <td><center><a href="https://en.wikipedia.org/wiki/Violin">CLICK HERE</a></center></td>
+              </tr>
+              <tr>
+                  <td><center>6</center></td>
+                  <td><center>CYMBALS</center></td>
+                  <td><center>
+                      <audio controls>
+                          <source src="cymbals.mp3" type="audio/mpeg">
+                      </audio>
+                  </center></td>
+                  <td><center><img src="cymbal.jpeg" width = "250px" height = "250px"></center></td>
+                  <td><center><a href="https://en.wikipedia.org/wiki/Cymbal">CLICK HERE</a></center></td>
+              </tr>
+              <tr>
+                  <td><center>7</center></td>
+                  <td><center>XYLOPHONE</center></td>
+                  <td><center>
+                      <audio controls>
+                          <source src="xylophone_drum.mp3" type="audio/mpeg">
+                      </audio>
+                  </center></td>
+                  <td><center><img src="xy.jpeg" width = "250px" height = "250px"></center></td>
+                  <td><center><a href="https://en.wikipedia.org/wiki/Xylophone">CLICK HERE</a></center></td>
+              </tr>
+              <tr>
+                  <td><center>8</center></td>
+                  <td><center>TABLA</center></td>
+                  <td><center>
+                      <audio controls>
+                          <source src="tabla.mp3" type="audio/mpeg">
+                      </audio>
+                  </center></td>
+                  <td><center><img src="Prop._Tabla.jpg" width = "250px" height = "250px"></center></td>
+                  <td><center><a href="https://en.wikipedia.org/wiki/Tabla">CLICK HERE</a></center></td>
+              </tr>
+              <tr>
+                  <td><center>9</center></td>
+                  <td><center>CONGA</center></td>
+                  <td><center>
+                      <audio controls>
+                          <source src="congas.mp3" type="audio/mpeg">
+                      </audio>
+                  </center></td>
+                  <td><center><img src="g.jpeg" width = "250px" height = "250px"></center></td>
+                  <td><center><a href="https://en.wikipedia.org/wiki/Conga">CLICK HERE</a></center></td>
+              </tr>
+              <tr>
+                  <td><center>10</center></td>
+                  <td><center>FLUTE</center></td>
+                  <td><center>
+                      <audio controls>
+                          <source src="flute_ringtone.mp3" type="audio/mpeg">
+                      </audio>
+                  </center></td>
+                  <td><center><img src="flute.jpeg" width = "250px" height = "250px"></center></td>
+                  <td><center><a href="https://en.wikipedia.org/wiki/Flute">CLICK HERE</a></center></td>
+              </tr>
+              <tr>
+                  <td><center>11</center></td>
+                  <td><center>TRUMPET</center></td>
+                  <td><center>
+                      <audio controls>
+                          <source src="trumpet_sound.mp3" type="audio/mpeg">
+                      </audio>
+                  </center></td>
+                  <td><center><img src="trumpet.jpeg" width = "250px" height = "250px"></center></td>
+                  <td><center><a href="https://en.wikipedia.org/wiki/Trumpet">CLICK HERE</a></center></td>
+              </tr>
+              <tr>
+                  <td><center>12</center></td>
+                  <td><center>GUITAR</center></td>
+                  <td><center>
+                      <audio controls>
+                          <source src="best_guitar_tone.mp3" type="audio/mpeg">
+                      </audio>
+                  </center></td>
+                  <td><center><img src="download.jpeg" width = "250px" height = "250px"></center></td>
+                  <td><center><a href="http://en.wikipedia.org/wiki/Guitar">CLICK HERE</a></center></td>
+              </tr>
+              <tr>
+                  <td><center>13</center></td>
+                  <td><center>HARMONICA</center></td>
+                  <td><center>
+                      <audio controls>
+                          <source src="harmonica_sms.mp3" type="audio/mpeg">
+                      </audio>
+                  </center></td>
+                  <td><center><img src="h.jpg" width = "250px" height = "250px"></center></td>
+                  <td><center><a href="http://en.wikipedia.org/wiki/Harmonica">CLICK HERE</a></center></td>
+              </tr>
+              <tr>
+                  <td><center>14</center></td>
+                  <td><center>HARP</center></td>
+                  <td><center>
+                      <audio controls>
+                          <source src="harp.mp3" type="audio/mpeg">
+                      </audio>
+                  </center></td>
+                  <td><center><img src="OIP.jpeg" width = "250px" height = "250px"></center></td>
+                  <td><center><a href="http://en.wikipedia.org/wiki/Harp">CLICK HERE</a></center></td>
+              </tr>
+              <tr>
+                  <td><center>15</center></td>
+                  <td><center>TAMBOURINE</center></td>
+                  <td><center>
+                      <audio controls>
+                          <source src="tambourine.mp3" type="audio/mpeg">
+                      </audio>
+                  </center></td>
+                  <td><center><img src="preview.jpeg" width = "250px" height = "250px"></center></td>
+                  <td><center><a href="https://en.wikipedia.org/wiki/Tambourine">CLICK HERE</a></center></td>
+              </tr>
+          </table>
+</body>
+</html>
+

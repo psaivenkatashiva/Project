@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Music Website</title>
+<link rel="stylesheet" href="style.css">  
+<script src="https://kit.fontawesome.com/5a21e208fd.js" crossorigin="anonymous"></script>
+
+<style>
+    *{
+        margin : 0;
+        padding :0;
+        font-family: sans-serif;
+    }
+    .container{
+        height : 100vh;
+        width :100%;
+        background-image : url('image.png');
+        background-size: cover;
+        background-position: center;
+    }
+    .navbar{
+        width :88%;
+        margin : auto;
+        padding : 15px 0;
+        display : flex;
+        align-items : center;justify-content: space-between;
+
+    }
+    .logo{
+        width : 140px;
+        cursor : pointer;
+    }
+    .navbar ul li {
+        list-style : none;
+        display : inline-block;
+        margin : 0 15px;
+    }
+    .navbar ul li a{
+        text-decoration : none;
+        color :#5f5f5f;
+        font-size:25px;
+    }
+    .content {
+        width:100%;
+        position : absolute;
+        top :30%
+    }
+    .left-col{
+        margin-left :6%;
+    }
+    .left-col h1{
+        font-size : 90px;
+        color : #fff;line-height :110px;
+        float : left;
+    }
+    .right-col{
+        float:right;
+        margin-right : 6%;
+        margin-top: 120px;
+        display : flex;
+        align-items:center;
+    }
+    .right col p{
+        font-size:18px;
+        color:#5f5f5f;
+        font-weight:400;
+        margin-right:15px;
+    }
+    #icon{
+        width : 80px;
+        cursor:pointer;
+    }
+    table{
+                text-align:center;
+                font-family: sans-serif;
+                border-collapse: collapse;
+                border-spacing : 3px;
+                justify-content: center;
+                align-items : center;
+                margin-top: 100px;
+                
+                
+            }
+            th{
+                background-color:#333;
+                color: #fff;
+            }
+            th,td{
+                padding : .8rem;
+                font-size : 1.4rem;
+            }
+            tbody{
+                background-color: rgba(240, 248, 255, 0.493);
+                color : #555;
+            }
+            a{
+                text-decoration : none;
+            }
+            a{
+                color:#5f5f5f;
+            }
+            marquee{
+            background: rgb(194,205,218); /* Old browsers */
+background: -moz-linear-gradient(left,  rgba(194,205,218,1) 0%, rgba(88,97,104,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(194,205,218,1) 0%,rgba(88,97,104,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(194,205,218,1) 0%,rgba(88,97,104,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c2cdda', endColorstr='#586168',GradientType=1 ); /* IE6-9 */
+
+            color: greenyellow;
+            scroll-behavior: left;
+            font-size: 3rem;
+            display : inline-block; 
+            font-family: 'Merriweather', serif;
+            scroll-behavior: left;
+        }
+        img{
+  float : left;
+            width:100px;
+            height:80px;
+            margin :30px;
+            border-radius: 200px;
+            margin-left : 60px;
+        }
+        .nav-area li a {
+                color: darkcyan;
+                text-decoration: none;
+                padding: 5px 20px;
+                font-family: 'Lato', sans-serif;
+                font-size: 20px;
+                text-transform: uppercase;
+                margin : 10px;
+            }
+  
+        th::first-letter{
+            font-size:2rem;
+        }
+        th::first-line{
+            font-weight: bolder;
+        }
+        .nav-area li a {
+                color: #fff;
+                text-decoration: none;
+                padding: 5px 20px;
+                font-family: 'Poppins', sans-serif;
+                font-size: 25px;
+                text-transform: uppercase;
+                float: right;
+            }
+            .nav-area li a:hover {
+background: #fff;          
+      color: #333;
+      float: right;
+            }
+            .fa-home{
+    color:blue;
+    font-size:3rem;
+  }
+  .fa-product-hunt{
+    color:blue;
+    font-size:3rem;
+  }
+  .fa-address-card{
+    color:blue;
+    font-size:3rem;
+  }
+  .fa-phone-alt{
+    color:blue;
+    font-size:3rem;
+  } 
+  .fa-list-alt{
+    color:blue;
+    font-size:3rem;
+  }
+    </style>
+</head>
+<body>
+        <div class="container">
+            <div class = "navbar"><a href="h.html"> <img src = "logo.png" alt ="" class = "logo"></a>
+                <ul class="nav-area">
+                    <li><a href="h.html"><i class="fas fa-home fa"></i></a></li>
+                    <li><a href="description.html"><i class="far fa-list-alt"></i>
+
+                    </a></li>
+                    <li><a href="services.html"><i class="fab fa-product-hunt"></i>
+
+                    </a></li>
+                    <li><a href="contact.html"><i class="fas fa-address-card"></i>
+
+                    </a></li>
+                    <li><a href="about.html"><i class="fas fa-phone-alt"></i>
+                        <li><a href="#"></a></li>
+
+                    </ul>
+            </div>
+            <div><center>
+                <table>
+                
+                    <tr>
+                        
+                        <th>NAME</th>
+                        <th>AGE</th>
+                        <th>ENROLLMENT NUMBER</th>
+                        <th>CONTACT NUMBER</th>
+                            <th> LEARNING AT</th>
+                    </tr>
+                    <tr>
+                        <td><a href="#">VENKATA SHIVA</a></td>
+                        <td>22</td>
+                        <td>EBEONO821419516</td>
+                        <td>7675018016</td>
+                        <td rowspan = "5"> <center>EDUBRIDGE RELATED TO </center>
+                            <ul>
+                                <li>JAVA</li>
+                                <li>HTML AND CSS</li>
+                            </ul>
+            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">SOUMYA</a></td>
+                        <td>23</td>
+                        <td>EBEONO821100376</td>
+                        <td>7997791928</td>
+                        
+                    </tr>
+                    <tr>
+                        <td><a href="#">SUPRIYA</a></td>
+                        <td>22</td>
+                        <td>EBEON0821421561</td>
+                        <td>7661078343</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">PRUDHVI</a></td>
+                        <td>22</td>
+                        <td>EBEON0821415826</td>
+                        <td>9573856978</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">SHALINI</a></td>
+                        <td>22</td>
+                        <td>EBEONO821419576</td>
+                        <td>9121940049</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5"><center><h1><span>PROJECT ON MUSICAL INSTRUMENTS</span></h1></center> </td>
+                    </tr>
+            
+                </table></center>
+            </div>
+
+</script>
+</body>
+</html>
+
